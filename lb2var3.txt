@@ -1,0 +1,41 @@
+use lb2var3;
+
+db.createCollection('nurse');
+
+db.nurse.save({id_nurse:1, name:"kotova"});
+db.nurse.save({id_nurse:2, name:"petrova"});
+db.nurse.save({id_nurse:3, name:"ivanova"});
+db.nurse.save({id_nurse:4, name:"sidorova"});
+
+db.createCollection('duty');
+
+
+db.duty.save({fid_nurse:1, date:"2021-03-10", shift:"first", department:"dep №1", fid_ward:1});
+
+db.duty.save({fid_nurse:2, date:"2022-03-10", shift:"second", department:"dep №2", fid_ward:3});
+
+db.duty.save({fid_nurse:3, date:"2031-05-11", shift:"third", department:"dep №3", fid_ward:4});
+
+db.duty.save({fid_nurse:4, date:"2041-07-15", shift:"first", department:"dep №1", fid_ward:1});
+
+db.duty.save({fid_nurse:2, date:"2051-08-20", shift:"third", department:"dep №2", fid_ward:2});
+
+
+db.createCollection('ward');
+
+db.ward.save({id_ward:1, name:"ward №1"});
+db.ward.save({id_ward:2, name:"ward №2"});
+db.ward.save({id_ward:3, name:"ward №3"});
+db.ward.save({id_ward:4, name:"ward №4"});
+
+
+
+
+
+
+
+
+
+
+
+
